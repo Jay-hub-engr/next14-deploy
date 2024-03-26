@@ -10,42 +10,46 @@ export default function about  () {
     <div 
       className="py-10 mx-auto text-center flex flex-col items-center max-w-3xl">
         <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl border-">
-          For questions or inquiries {''}
+          For questions or inquiries contact us {''}
           <span 
           className="text-rose-600 ">
-            contact us today
+             today
           </span>
           .
           </h1>
-          <div className='mt-10 mx-auto text-center flex flex-col items-center'>
+          <div className='mt-8 mx-auto text-center flex flex-col items-center'>
           <Image 
                 src="/email.png"
                 width={100}
                 height={100}
                 alt="Picture of the author"
                   />
-                  <div className='font-bold text-2xl text-center mt-4'>Email:</div>
-                  <div className='font-sans text-xl text-center mt-2'>Info@Majesticdrywallandpaint.com</div>
-                  <div className='font-bold text-2xl text-center mt-4'>Careers:</div>
-                  <div className='font-sans text-xl text-center mt-2'>Careers@Majesticdrywallandpaint.com</div>
+                  <div className='font-bold text-rose-500 text-2xl text-center mt-4'>Email:</div>
+                  <div className='font-sans text-md text-center mt-2'>For all none urgent inquiries please contact us via the email</div>
+                  <div className='font-sans text-xl text-center border-b-2 mt-2'>Info@Majesticdrywallandpaint.com</div>
+                  <div className='font-bold text-rose-500 text-2xl text-center mt-4'>Careers:</div>
+                  <div className='font-sans text-md text-center mt-2'>For information regarding careers please send CV and Resume to the email</div>
+                  <div className='font-sans text-xl text-center border-b-2 mt-2'>Careers@Majesticdrywallandpaint.com</div>
                   <Image className='mt-8'
                 src="/phone.png"
                 width={100}
                 height={100}
                 alt="Picture of the author"
                   />
-                  <div className='font-bold text-2xl text-center mt-4'>Phone:</div>
-                  <div className='font-sans text-xl text-center mt-2'>
-                    (720) 838-8011
+                  <div className='font-bold text-rose-500 text-2xl text-center mt-4'>Phone:</div>
+                  <div className='font-sans text-md text-center mt-4'>For information regarding appointments please call</div>
+                  <div className='font-sans text-xl text-center border-b-2 mt-2'>
+                    Office: (720) 838-8011
                     </div>
-                  <Image className='mt-8'
+                    <Image className='mt-8'
                 src="/mailbox.png"
                 width={100}
                 height={100}
                 alt="Picture of the author"
                   />
-                  <div className='font-bold text-2xl text-center mt-4'>P.O. Box:</div>
-                  <div className='font-sans text-xl text-center mt-2'>2548</div> 
+                  <div className='font-bold text-rose-500 text-2xl text-center  mt-4'>P.O. Box:</div>
+                  <div className='font-sans text-md text-center mt-4'>Please send mailed checks to the following P.O. box</div>
+                  <div className='font-sans text-xl text-center border-b-2 mt-2'>2548</div> 
           </div>
 
 

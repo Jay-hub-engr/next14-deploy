@@ -7,14 +7,15 @@ const Footer = () => {
     return(
 
 
-<section className="border-t mt-3 border-gray-200 bg-gray-200">
-      <MaxWidthWrapper className="grid grid-cols-1  gap-y-12 ">
+<section className="border-t mt-0 border-gray-200 bg-gray-200">
+      <MaxWidthWrapper className="grid grid-cols-1 text-center gap-y-12 ">
         <div className="py-2 mx-auto flex flex-col items-center max-w-2xl">
-          <Button variant={"outline"} className="font-bold">
+          <div className="font-lg ">
           Licenced and Insured for over 20 years
-          </Button>
-          <div className="font-bold">Denver, Colorado est. 2007</div>
-          
+          </div>
+          <div className="font-bold">est. 2007</div>
+          <div className="font-lg">Denver, Colorado 
+          </div>
           </div>
         
         
