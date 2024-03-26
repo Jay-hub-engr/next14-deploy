@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import { buttonVariants } from '@/components/ui/button'
 import Link from 'next/link'
