@@ -7,7 +7,7 @@ const Footer = () => {
     return(
 
 
-<section className="border-t mt-0 border-gray-200 bg-gray-200">
+<section className="border-t mt-3 border-gray-200 bg-gray-50 ">
       <MaxWidthWrapper className="grid grid-cols-1 text-center gap-y-12 ">
         <div className="py-2 mx-auto flex flex-col items-center max-w-2xl">
           <div className="font-lg ">

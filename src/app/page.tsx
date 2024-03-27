@@ -30,12 +30,12 @@ const perks = [{
 {
   name: 'Safety',
   Icon: HardHat,
-  description:"Our carpentry prowess is renowned for its craftsmanship, precision, and versatility. With a team of highly skilled artisans and carpenters, we excel in creating custom woodwork of exceptional quality and durability."
+  description:"Safety is our top priority. We are committed to providing a secure working environment for our team members, subcontractors, and clients alike. Through rigorous training, adherence to industry standards, and implementation of comprehensive safety protocols, we ensure that every aspect of our projects prioritizes the well-being of all involved. "
 },
 {
   name: 'Guaranteed Quality',
   Icon: Handshake,
-  description:"Safety is our top priority. We are committed to providing a secure working environment for our team members, subcontractors, and clients alike. Through rigorous training, adherence to industry standards, and implementation of comprehensive safety protocols, we ensure that every aspect of our projects prioritizes the well-being of all involved. "
+  description:"At Majestic, we stand behind our work with an unwavering commitment to quality assurance. Our guarantee of quality is more than just a promise; it's a cornerstone of our reputation. From the selection of premium materials to the meticulous craftsmanship of our skilled artisans, we take every measure to ensure that each project meets or exceeds the highest industry standards. "
 },
 
 ]
@@ -62,7 +62,7 @@ export default function Home() {
             <Link href='/about' className={buttonVariants({variant:"default", size:"lg"})}>About</Link>
 
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 mt-6"><Link href='/contact' className={buttonVariants({variant:"outline", size:"lg"})}>Contact Us</Link></div>
+          <div className="flex flex-col sm:flex-row gap-4 mt-6"><Link href='/contact' className={buttonVariants({variant:"outline", size:"lg", } )}>Contact Us</Link></div>
       </div>
     </MaxWidthWrapper>
 

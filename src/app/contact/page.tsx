@@ -17,18 +17,28 @@ export default function about  () {
           </span>
           .
           </h1>
-          <div className='mt-8 mx-auto text-center flex flex-col items-center'>
+          <div className='mt-5 mx-auto text-center flex flex-col items-center bg-gray-100 rounded-[15%]'>
+          <div className='mt-5'>
           <Image 
                 src="/email.png"
                 width={100}
                 height={100}
                 alt="Picture of the author"
                   />
+                  </div>
                   <div className='font-bold text-rose-500 text-2xl text-center mt-4'>Email:</div>
-                  <div className='font-sans text-md text-center mt-2'>For all none urgent inquiries please contact us via the email</div>
+                  <div className='font-sans text-md text-center mt-2'>For all none urgent inquiries please contact us via</div>
                   <div className='font-sans text-xl text-center border-b-2 mt-2'>Info@Majesticdrywallandpaint.com</div>
+                  <div className='mt-10 items-center'>
+                  <Image 
+                src="/career.png"
+                width={100}
+                height={100}
+                alt="Picture of the author"
+                  />
+                  </div>
                   <div className='font-bold text-rose-500 text-2xl text-center mt-4'>Careers:</div>
-                  <div className='font-sans text-md text-center mt-2'>For information regarding careers please send CV and Resume to the email</div>
+                  <div className='font-sans text-md text-center mt-2'>For information regarding careers please send CV and Resume to</div>
                   <div className='font-sans text-xl text-center border-b-2 mt-2'>Careers@Majesticdrywallandpaint.com</div>
                   <Image className='mt-8'
                 src="/phone.png"
@@ -51,8 +61,6 @@ export default function about  () {
                   <div className='font-sans text-md text-center mt-4'>Please send mailed checks to the following P.O. box</div>
                   <div className='font-sans text-xl text-center border-b-2 mt-2'>2548</div> 
           </div>
-
-
       </div>
     </MaxWidthWrapper>
     
