@@ -10,7 +10,7 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Majestic",
+  title: "Majestic Drywall and Paint- Premium contracting services in the Denver Metro area. Call us today",
   description: "Jesus",
 };
 
@@ -29,7 +29,7 @@ export default function RootLayout({
         <div className="">
         <Footer/>
         </div>
-        
+
         <Analytics/>
 
         </body>
