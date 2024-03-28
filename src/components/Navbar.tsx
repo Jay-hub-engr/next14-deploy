@@ -9,7 +9,7 @@ const Navbar = () => {
             
             <header className="relative ">
                 <MaxWidthWrapper>
-                    <div className="border-b ">
+                    <div className=" ">
                         
                         <div className="flex justify-content:space-between align-items:center h-16 items-center">
                             
