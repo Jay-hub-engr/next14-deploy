@@ -44,44 +44,46 @@ const perks = [{
 export default function Home() {
   return (
   <>
-    <MaxWidthWrapper>
+  <section className="bg-slate-950">
+    <MaxWidthWrapper className="">
       <div 
-      className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl">
-        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl border-">
+      className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl bg-black-100 ">
+        <h1 className="text-4xl font-bold tracking-tight text-gray-400 sm:text-6xl border-md">
           Every job, all the time done {''}
           <span 
-          className="text-rose-600">
+          className="text-gray-50 border-b">
             right
           </span>
             .
           </h1>
-          <p className="mt-6 text-lg max-w-prose text-muted-foreground">
+          <p className="mt-6 text-lg max-w-prose text-gray-400">
           As a family-run enterprise, Majestic handles every disaster recovery situation with tailored care, understanding, and sympathy.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 mt-6">
+          <div className="flex flex-col sm:flex-row gap-4 mt-6 border border-gray-100 rounded-md shadow-md" >
             <Link href='/about' className={buttonVariants({variant:"default", size:"lg"})}>About</Link>
 
           </div>
           <div className="flex flex-col sm:flex-row gap-4 mt-6"><Link href='/contact' className={buttonVariants({variant:"outline", size:"lg", } )}>Contact Us</Link></div>
       </div>
     </MaxWidthWrapper>
+    </section>
 
-    <section className="border-t border-gray-200 bg-gray-50">
+    <section className="border- bg-slate-950">
       <MaxWidthWrapper className="py-5">
-        <div className="flex-center text-center text-xl font-bold mb-6 text-gray-600">What we do</div>
-        <div className="grid grid-cols-1  gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0">
+        <div className="flex-center text-center text-xl font-bold mb-6 text-gray-50">What we do</div>
+        <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0">
           {perks.map((perk) =>(
-            <div key={perk.name} className="text-center md-flex md:items-start md:text-left lg:block lg:text-center">
+            <div key={perk.name} className="text-center border-t md-flex md:items-start md:text-left lg:block lg:text-center">
               <div className="md:flex-shrink-0 flex justify-center">
-                <div className="h-16 w-16 flex items-center justify-center rounded-full mt-5 bg-red-100 text-black-900">
+                <div className="h-16 w-16 flex items-center justify-center rounded-full mt-5 bg-gray-50 text-black-900">
                   {<perk.Icon className="w-1/3 h-1/3 "/>}
                 </div>
               </div>
               <div className="mt-6 md:ml-4 md:mt-0 lg:ml-0 lg:mt-6">
-                <h3 className="text-base text-center font-medium text-gray-900">
+                <h3 className="text-base text-center font-medium text-gray-200 ">
                   {perk.name}
                 </h3>
-                  <p className="mt-4 text-sm text-muted-foreground">
+                  <p className="mt-2 text-md text-gray-400">
                     {perk.description}
                   </p>
                   </div>

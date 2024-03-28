@@ -5,7 +5,7 @@ import NavItems from "./NavItems"
 
 const Navbar = () => {
     return(
-        <div className="backdrop-blur-[50px] border-gray-300 grid-col-3 sticky z-=50 top-0 inset-x-0 h-16">
+        <div className="bg-gray-700  grid-col-3 sticky z-=50 top-0 inset-x-0 h-16">
             
             <header className="relative ">
                 <MaxWidthWrapper>
@@ -21,10 +21,12 @@ const Navbar = () => {
                             width={70}
                             height={35}
                             alt="Picture of the author"
+                            className="border-color"
+                    
                           />
                             </Link>
                             </div>
-                            <div className=" z-50 lg:block lg:self-stretch text-2xl font-bold mt-5 ml-5">
+                            <div className=" z-50 lg:block lg:self-stretch text-2xl font-bold mt-4 ml-2">
                                 <NavItems/>
                             </div>
                             </div>

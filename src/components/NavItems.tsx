@@ -7,7 +7,7 @@ const NavItems = () => {
 
     return(
         <div>
-        <div className="ml-4 font bold ">
+        <div className="ml-4 font-bold text-gray-400">
             Majestic Drywall & Paint
         </div>
         </div>
