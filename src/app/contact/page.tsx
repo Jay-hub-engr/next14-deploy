@@ -8,20 +8,20 @@ export default function about  () {
   return (
     <section className='bg-slate-400'>
     <MaxWidthWrapper className=''>
-          <div className='mx-auto text-center flex flex-col items-center  rounded-[10%]'>
+          <div className='mx-auto text-center flex flex-col items-center  rounded-[5%]'>
           <div 
       className="py-10 mx-auto text-center flex flex-col items-center max-w-3xl">
-        <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl border-4 rounded-xl">
+        <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl border-4 rounded-xl mb-4">
           For questions or inquiries contact us {''}
           <span 
-          className="text-gray-500">
+          className="text-gray-600">
              today
           </span>
           .
           </h1>
           <div className='mt-5'>
           <Image 
-                src="/email.png"
+                src="/email1.png"
                 width={100}
                 height={100}
                 alt="Picture of the author"

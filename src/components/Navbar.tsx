@@ -26,7 +26,7 @@ const Navbar = () => {
                           />
                             </Link>
                             </div>
-                            <div className=" z-50 lg:block lg:self-stretch text-2xl font-bold mt-4 ml-2">
+                            <div className=" z-50 lg:block lg:self-stretch text-2xl font-bold mt-4 ml-1">
                                 <NavItems/>
                             </div>
                             </div>

@@ -51,7 +51,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold tracking-tight text-gray-400 sm:text-6xl border-md">
           Every job, all the time done {''}
           <span 
-          className="text-gray-50 border-b-4 rounded-lg mb-4">
+          className="text-gray-50 border-b-4 rounded-lg ">
             right
           </span>
             .
