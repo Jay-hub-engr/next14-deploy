@@ -10,6 +10,7 @@ const NavItems = () => {
         <div className="ml-4 font-bold text-gray-200">
             Majestic Drywall & Paint
         </div>
+        
         </div>
 
     )

@@ -5,6 +5,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Drill, Fence, Ghost, Hammer, Handshake, HardHat, PaintRoller, ThumbsUp } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 
 const perks = [{
@@ -44,11 +45,11 @@ const perks = [{
 export default function Home() {
   return (
   <>
-  <section className="bg-slate-950">
+  <section className="bg-slate-400">
     <MaxWidthWrapper className="">
       <div 
       className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl bg-black-100 ">
-        <h1 className="text-4xl font-bold tracking-tight text-gray-400 sm:text-6xl border-md">
+        <h1 className="text-4xl font-bold tracking-tight text-gray-800 sm:text-6xl border-md">
           Every job, all the time done {''}
           <span 
           className="text-gray-50 border-b-4 rounded-lg ">
@@ -56,7 +57,7 @@ export default function Home() {
           </span>
             .
           </h1>
-          <p className="mt-6 text-lg max-w-prose text-gray-400">
+          <p className="mt-6 text-xl max-w-prose text-gray-800">
           As a family-run enterprise, Majestic handles every disaster recovery situation with tailored care, understanding, and sympathy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-6 border border-gray-100 rounded-md shadow-md" >
@@ -64,11 +65,23 @@ export default function Home() {
 
           </div>
           <div className="flex flex-col sm:flex-row gap-4 mt-6"><Link href='/contact' className={buttonVariants({variant:"outline", size:"lg", } )}>Contact Us</Link></div>
+          <div className="flex flex-col sm:flex-row gap-4 mt-2 items-center"> 
+          <Link href={"https://www.linkedin.com/in/carlos-cortes-92b85662/"}>
+          <Image
+          src="/linkedin.png"
+          width={80}
+          height={80}
+          alt="Linkedin"
+          className='mx-auto mt-3 flex flex-col items'
+          />
+          </Link>
+          </div>
+      
       </div>
     </MaxWidthWrapper>
     </section>
 
-    <section className="border- bg-slate-950">
+    <section className="border- bg-slate-500">
       <MaxWidthWrapper className="py-5">
         <div className="flex-center text-center text-xl font-bold mb-6 text-gray-50">What we do</div>
         <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0">
@@ -80,10 +93,10 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-6 md:ml-4 md:mt-0 lg:ml-0 lg:mt-6">
-                <h3 className="text-base text-center font-medium text-gray-200 ">
+                <h3 className="text-base text-center font-medium text-gray-100 ">
                   {perk.name}
                 </h3>
-                  <p className="mt-2 text-md text-gray-400">
+                  <p className="mt-2 mb-4 text-md font-semibold text-slate-900">
                     {perk.description}
                   </p>
                   </div>
