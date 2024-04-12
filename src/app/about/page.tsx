@@ -5,10 +5,10 @@ import Image from 'next/image'
 
 export default function about  () {
   return (
-    <section className="border-t bg-slate-950 items-center">
-      <MaxWidthWrapper className="py-5 bg-slate-950 items-center text-center">
+    <section className="border-t bg-slate-500 items-center">
+      <MaxWidthWrapper className="py-5 bg-slate-400 items-center text-center">
         <div className='border-b text-center'>
-          <h1 className='text-4xl mt-4 text-gray-400 font-bold'>
+          <h1 className='text-4xl mt-4 text-gray-700 font-bold'>
             Who are <span className='text-gray-50'> we?</span>
           </h1>
           <div className='text-xl mt-4 mb-4 text-gray-200 text-center items-center'>
@@ -26,7 +26,7 @@ export default function about  () {
           </div>
         </div>
         <div className='border-b text-center mt-2'>
-          <h1 className='text-4xl mt-4 text-gray-400 font-bold'>
+          <h1 className='text-4xl mt-4 text-gray-700 font-bold'>
             Our <span className='text-gray-50'> experience?</span>
           </h1>
           <div className='text-xl mt-4 mb-4 text-gray-200 text-center'>
@@ -43,7 +43,7 @@ export default function about  () {
           </div>
         </div>
         <div className='text-center mt-2 mb-4'>
-          <h1 className='text-4xl mt-4 text-gray-400 font-bold'>
+          <h1 className='text-4xl mt-4 text-gray-700 font-bold'>
             What makes us <span className='text-gray-50'> different?</span>
           </h1>
           <div className='text-xl mt-4 mb-4 text-gray-200 text-center'>
