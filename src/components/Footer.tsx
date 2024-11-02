@@ -2,27 +2,33 @@
 
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Button } from "./ui/button";
+import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react'; // Import icons
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear(); // Declare and initialize currentYear variable
     return(
+        <section className=" border-gray-200 bg-slate-800">
+            <MaxWidthWrapper className="grid grid-cols-1 md:grid-cols-2 text-center gap-y-2 py-4">
+            
 
 
-<section className="border-t mt-sm border-gray-200 bg-slate-800">
-      <MaxWidthWrapper className="grid grid-cols-1 text-center gap-y-2 ">
-        <div className="py-2 mx-auto flex flex-col items-center max-w-2xl">
-          <div className="font-lg text-gray-100 ">
-          Licensed and insured for over 17 years
-          </div>
-          <div className="font-bold text-gray-100">est. 2007</div>
-          <div className="font-lg text-gray-100">Denver, Colorado 
-          </div>
-          </div>
-        
-        
-      </MaxWidthWrapper>
-    </section>
-    )
-}
+                <div className="mx-auto flex flex-col items-center">
+                    <h3 className="text-lg font-semibold text-gray-100 mb-4">Follow Us</h3>
+                    <div className="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/carlos-cortes-92b85662/" aria-label="LinkedIn">
+                            <Linkedin className="w-6 h-6 text-gray-100 hover:text-white" />
+                        </a>
+                    </div>
+                </div>
 
+                <div className="mx-auto flex flex-col items-center">
+                    <h3 className="text-lg font-semibold text-gray-100 mb-4">Contact Us</h3>
+                    <a href="tel:+1234567890" className="text-gray-100 hover:text-white">720-984-8665</a>
+                    <a href="mailto:info@majestic.com" className="text-gray-100 hover:text-white">info@majestic.com</a>
+                </div>
+            </MaxWidthWrapper>
+        </section>
+    );
+};
 
-export default Footer
+export default Footer;
