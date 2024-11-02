@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Majestic Drywall and Paint- Premium contracting services in the Denver Metro area. Call us today",
-  description: "Jesus",
+  description: "MDP",
 };
 
 export default function RootLayout({
