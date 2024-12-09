@@ -28,7 +28,7 @@ export default function RootLayout({
         <div className="flex-grow flex-1">{children}</div>
         <SpeedInsights />
         </main>
-        <div className="">
+        <div>
         <Footer/>
         <div>
         </div>

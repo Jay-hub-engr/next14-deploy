@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Footer from "@/components/Footer";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Drill, Fence, Flame, Ghost, Hammer, Handshake, HardHat, icons, Leaf, PaintRoller, Snowflake, ThumbsUp } from "lucide-react";
@@ -13,10 +12,10 @@ import { Battery0Icon, ExclamationCircleIcon, FireIcon } from "@heroicons/react/
 import { BsExclamation } from "react-icons/bs";
 import { FaBatteryFull } from "react-icons/fa";
 import { FcChargeBattery } from "react-icons/fc";
-import ServiceAreaMap from "@/components/map";
+import React from 'react'; import dynamic from 'next/dynamic'; 
 
 
-
+const ServiceAreaMap = dynamic(() => import('@/components/map'), { ssr: false});
 
 const perks = [{ name: 'Paint', Icon: PaintRoller, description:"Majestic boasts a skilled team of artisans who possess a keen eye for detail and precision. Utilizing advanced techniques and high-quality materials, we consistently achieve flawless finishes that exceed industry standards." }, 
   { name: 'Drywall', Icon: Hammer, description:"Majestic excels in drywall services, we showcase unmatched expertise in the installation, repair, and finishing of drywall surfaces. " }, 
@@ -107,11 +106,20 @@ export default function Home() {
           </div>
         </MaxWidthWrapper>
       </section>
-      <section className="bg-slate-300">
-        <MaxWidthWrapper >
-        <ServiceAreaMap />
-        </MaxWidthWrapper>
-      </section>
+
+      <section className="bg-slate-600 py-10">
+         <MaxWidthWrapper> 
+          <div className="text-center text-2xl font-extrabold mb-6 text-gray-50">
+             Where We Serve 
+             </div> 
+             <p className="text-center text-lg mb-8 text-gray-300">
+               Majestic Drywall & Paint proudly serves the entire Denver metro area. Explore our service area on the map below. 
+               </p> 
+               <div className="shadow-lg rounded-lg overflow-hidden"> 
+                <ServiceAreaMap /> 
+                </div> 
+                </MaxWidthWrapper> 
+                </section>
     </>
   );
 }
