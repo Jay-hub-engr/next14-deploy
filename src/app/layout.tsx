@@ -30,10 +30,10 @@ export default function RootLayout({
         </main>
         <div className="">
         <Footer/>
+        <div>
         </div>
-
+        </div>
         <Analytics/>
-
         </body>
       
         

@@ -23,7 +23,7 @@ const Footer = () => {
 
                 <div className="mx-auto flex flex-col items-center">
                     <h3 className="text-lg font-semibold text-gray-100 mb-4">Contact Us</h3>
-                    <a href="tel:+1234567890" className="text-gray-100 hover:text-white">720-984-8665</a>
+                    <a href="tel:+1234567890" className="text-gray-100 hover:text-white">720-838-8011</a>
                     <a href="mailto:info@majestic.com" className="text-gray-100 hover:text-white">info@majestic.com</a>
                 </div>
             </MaxWidthWrapper>

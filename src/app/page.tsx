@@ -13,6 +13,10 @@ import { Battery0Icon, ExclamationCircleIcon, FireIcon } from "@heroicons/react/
 import { BsExclamation } from "react-icons/bs";
 import { FaBatteryFull } from "react-icons/fa";
 import { FcChargeBattery } from "react-icons/fc";
+import ServiceAreaMap from "@/components/map";
+
+
+
 
 const perks = [{ name: 'Paint', Icon: PaintRoller, description:"Majestic boasts a skilled team of artisans who possess a keen eye for detail and precision. Utilizing advanced techniques and high-quality materials, we consistently achieve flawless finishes that exceed industry standards." }, 
   { name: 'Drywall', Icon: Hammer, description:"Majestic excels in drywall services, we showcase unmatched expertise in the installation, repair, and finishing of drywall surfaces. " }, 
@@ -101,6 +105,11 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </MaxWidthWrapper>
+      </section>
+      <section className="bg-slate-300">
+        <MaxWidthWrapper >
+        <ServiceAreaMap />
         </MaxWidthWrapper>
       </section>
     </>
